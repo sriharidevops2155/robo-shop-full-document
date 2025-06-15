@@ -10,28 +10,23 @@ PERF - Performance
 Linux --> Linus torvalds
 
 
-**windows:**
+### **windows:**
 
 not open source, 
-
 costly, 
-
 not secure must install anti virus, 
-
 slow, 
-
 too many graphics, 
-
 frequent restarts, 
-
 tough to update/upgrade
 
 Linux --> 9MB
-Secure
-high speed --> mostly text
-no need of restarts
-install or update packages is easy
-free, community support
+
+Secure, 
+high speed --> mostly text, 
+no need of restarts, 
+install or update packages is easy, 
+free, community support, 
 low resources"
 	
 
@@ -42,7 +37,7 @@ DEV, QA, SIT, UAT, PERF, PRE-PROD, PROD
 
 min 2, max any number
 
-Linux --> Linus torvalds
+### Linux --> Linus torvalds
 =================
 UNIX --> Hardware and Software(Unix OS) together
 CPU, RAM, Hard Disk, OS(Software)

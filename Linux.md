@@ -10,8 +10,7 @@ PERF - Performance
 Linux --> Linus torvalds
 
 
-windows
------------
+windows:
 not open source
 costly
 not secure must install anti virus

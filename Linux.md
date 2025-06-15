@@ -11,6 +11,7 @@ Linux --> Linus torvalds
 
 
 **windows:**
+
 not open source, 
 
 costly, 

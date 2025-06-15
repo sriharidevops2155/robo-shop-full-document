@@ -11,17 +11,17 @@ Linux --> Linus torvalds
 
 
 **windows:**
-not open source
+not open source, 
 
-costly
+costly, 
 
-not secure must install anti virus
+not secure must install anti virus, 
 
-slow
+slow, 
 
-too many graphics
+too many graphics, 
 
-frequent restarts
+frequent restarts, 
 
 tough to update/upgrade
 
@@ -51,7 +51,7 @@ Linux --> from the sratch using C language based on unix principles. He invented
 
 windows
 -----------
-not open source
+not open source, 
 costly
 not secure must install anti virus
 slow

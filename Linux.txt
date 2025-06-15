@@ -1,0 +1,1562 @@
+----------
+# Session- 1 28 Apr
+----------
+
+
+https://github.com/daws-84s
+	
+Environments: DEV, QA, SIT, UAT, PERF, PRE-PROD, PROD
+
+SIT- System Integration Testing
+PERF - Performance 
+
+Linux --> Linus torvalds
+
+
+### **windows:**
+
+not open source, 
+costly, 
+not secure must install anti virus, 
+slow, 
+too many graphics, 
+frequent restarts, 
+tough to update/upgrade
+
+Linux --> 9MB
+
+Secure, 
+high speed --> mostly text, 
+no need of restarts, 
+install or update packages is easy, 
+free, community support, 
+low resources"
+	
+
+**DevOps is the process of building, deploying and testing the code written by developer on the same day instead of doing after complete development.. we can acheive this using continous integration, continous deployment, continous delivery and continous testing. 
+We can do faster releases with less defect using DevOps... basically automation mindset to get the best results**
+
+DEV, QA, SIT, UAT, PERF, PRE-PROD, PROD
+
+min 2, max any number
+
+### Linux --> Linus torvalds
+=================
+
+UNIX --> Hardware and Software(Unix OS) together, 
+CPU, RAM, Hard Disk, OS(Software), 
+Laptop --> IBM BIOS
+
+Linux --> from the sratch using C language based on unix principles. He invented git to store this
+
+### **windows:**
+================
+
+not open source, 
+costly,
+not secure must install anti virus,
+slow,
+too many graphics,
+frequent restarts,
+tough to update/upgrade,
+
+### **Linux:** --> 9MB
+================
+
+Secure, 
+high speed --> mostly text,
+no need of restarts,
+install or update packages is easy,
+free, community support,
+low resources,
+	
+----------
+# Session- 2 29 Apr
+----------
+
+what is computer?
+==================
+IP enabled device
+
+laptop == mobile == server == chip == tv ==> computer
+server ==> only to host applications
+
+RAM, OS, HD, Processor --> IP enabled device
+
+Client Server architecture
+
+Networking between computers
+
+1. Network
+2. Facebook application
+
+serve --> lawyer serves to us, we are his client
+
+facebook is in Linux server, if problem comes we need to login to server..
+
+https://www.joindevops.com
+
+Protocol: https
+Port: 443
+IP: DNS IP
+Username and password --> authentication
+
+SSH --> Secure shell
+Port: 22
+IP, Username and password/private-key
+
+Firewall --> checks inbound and outbound traffic
+
+inbound --> incoming traffic --> port number 22, 103.149.59.114
+outbound --> outgoing traffic
+
+authentication
+==================
+1. what you know --> username password
+2. what you have --> keys, tokens, authentication, rsa token
+3. what you are --> fingerprint, retina, palm, face
+
+Server == box == node   - > In companies server is generally noted as box by everyone
+
+lock = public
+key = private
+
+key pairs --> public key and private key
+
+
+1. create key pair
+2. create firewall
+3. import public key to aws account
+4. create server and attach public key
+5. attach firewall to server
+
+Git Bash --> Mini Linux in windows
+SSH client 
+
+browser --> http/https client
+Linux Server --> SSH Server
+
+git bash == putty == super putty == mobaxterm == mac terminal = windows cmd
+
+ssh clients
+
+pwd --> present working directory
+
+User Directory
+C:\Users\siva --> windows format
+/c/Users/siva --> linux format
+
+Windows accept space in file name -> Linux won't accept 
+
+windows --> not case sensitive Siva == siva == Siva
+Linux --> case sensitive --> Siva != siva no space in linux
+
+/c/devops/daws-84s == C:\devops\daws-84s
+
+ssh-keygen -f <file-name>
+
+ssh-keygen -f daws-84s
+
+ssh-rsa long-random-code Sri Hari. Bandi@DESKTOP-NSG82HF
+
+Region --> us-east-1 - N.Virginia -> AWS is first created in US at N>virgina and hence using any service in this locations is cheaper in terms of cost 
+
+0.0.0.0/0
+
+98.81.70.98, 22, SSH, ec2-user, private-key
+
+ssh -i <private-key> ec2-user@98.81.70.98
+
+OS --> Redhat, Ubuntu, centos, fedore, suse, oracle linux, amazon linux, debian, rocky linux, kali, solaris
+
+Linux is os or not --> Linux is kernel
+
+OS --> to interact with hardware
+
+Kernal --> heart and brain of OS
+
+Kernel + UI == OS
+
+Redhat --> kernel + user interface ==> Redhat OS
+Debian --> Linux kernel + UI ==> Debian
+
+99.9% same all Linux distros/flavours
+
+Redhat --> Open source --> code is free
+Redhat enterprise RHEL --> support
+
+Current RHEL is OS version is 9 
+
+RHEL = AWS Linux = Centos = Fedora = Rocky Linux = AlmaLinux
+
+Linux is a kernal, RHEL is the distribution or Linux flavour 
+
+Search for Linux Distributions in Linux in Google -> It will show all dirstibutions 
+
+
+command <options> <inputs>
+
+
+uname  -> Will show which kernal we are using -> FYI Amazon Linux bacially uses Linux Kernal
+
+uname  -a . 
+
+uname --help
+
+will display all options avilable in uname command 
+
+/home/ec2-user --> linux home directory
+/c/users/siva --> windows home directory 
+
+cd --> change directory
+
+cd .. --> one step back
+
+ls --> list subdirectories
+
+
+drwx------. 3 ec2-user ec2-user  95 May  1 05:52 .
+drwxr-xr-x. 3 root     root      22 May  1 05:46 ..
+-rw-------. 1 ec2-user ec2-user  28 May  1 05:53 .bash_history
+
+
+d is directory 
+- Files 	
+	
+	
+======================================================================================================
+##Session- 3 30 Apr
+======================================================================================================
+
+
+ssh 
+
+
+/c/devops/daws-84s/daws-84s --> full path - > Absolute Path Starts from scratch - i.e from /c drive 
+
+ssh -i /daws-84s ec2-user@Ip -> Relative path 
+
+$ --> normal user 
+# --> root/admin/super user
+/root --> root user home directory
+
+command <options> <inputs>
+
+/ --> root directory
+
+ls -l --> long listing format in alphabetical order
+ls -lr --> long listing format in reverse alphabetical order
+ls -lt --> latest files on top 
+ls -ltr --> latest at bottom
+ls -la --> all files including hidden files and folders
+ls -lth -> h is human readable 
+
+touch <file-name> --> creates empty file
+
+cat > <file-name> --> type text, enter and ctrl+d
+tac <file_name>  also will display the file output 
+
+previous content will be replaced
+cat >> <file-name> --> appends text to previous content
+
+
+> --> usually called as redirection
+
+mkdir <name> --> creates directory
+mkdir -p <dirname/dirname/dirname>    
+rmdir --> remove empty directory
+rm -f --> forcefully removes file
+rm -rf --> recursively forcefully delete the files and folders inside too
+
+CRUD --> create read update delete
+
+cp <source> <destination> --> copy files/folders
+mv <source> <destination> --> cut and paste
+
+wget <URL> --> downloads the file
+curl <URL> --> shows on the screen
+
+cat <file-name> | grep <word-to-search>
+
+cat <file-name> | grep -i  <word-to-search> it will also show case sensitive 
+
+grep <word-to-search> <file>
+
+grep --help
+
+https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt
+
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1
+
+[ec2-user@ip-172-31-16-199 ~]$ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f9
+session-02.txt
+
+f is fragment here 
+
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1,9
+https:/session-02.txt
+[ec2-user@ip-172-31-16-199 ~]$ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1-9
+https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt
+[ec2-user@ip-172-31-16-199 ~]$ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1-4
+https://raw.githubusercontent.com/daws-84s
+
+
+awk command
+------------
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
+
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $NF}'    -> NF gives here last word
+
+log files --> tail -f <log-file>
+
+find <where to search> -name <file-name to search in where to search directory>
+
+[ec2-user@ip-172-31-16-199 etc]$ awk -F ":" '{print $1F ,"|" ,$3F}' passwd
+
+vim --> visually improved
+
+
+[ec2-user@ip-172-31-16-199 ~]$ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1f}'
+https:
+[ec2-user@ip-172-31-16-199 ~]$ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $nf}'
+https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt
+[ec2-user@ip-172-31-16-199 ~]$ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $Nf}'
+https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt
+[ec2-user@ip-172-31-16-199 ~]$ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $NF}'
+session-02.txt
+[ec2-user@ip-172-31-16-199 ~]$
+
+
+cat passwd | head -> Gives you the top 10 lines in output 
+cat passwd | taik-> Gives you the bottom 10 lines in output 
+
+cat passwd | head -n6     -> top 6 lines 
+cat passwd | tail -n6     -> top 6 lines 
+
+
+find . -name "*name*" what is the text that have name it will give in output 
+
+Interview Question: How do you check running log
+Answer:   tail -f <log-file>  -       -f is follow     -> Tail is the last lines and -f is the latest last lines updating while taking logs     - https://join-devops.slack.com/archives/C08PV10QXGV/p1746160328981459?thread_ts=1746157244.503419&cid=C08PV10QXGV
+
+how to check running logs in linux
+
+Use tail -f /var/log/ or less /var/log/
+
+OR
+
+Go to your log file parent directory using
+cd log directory path
+Then do
+tail -f logfilename
+
+
+[root@ip-172-31-16-199 ~]# find / -name config
+/etc/selinux/config
+/etc/crypto-policies/config
+/sys/kernel/config
+/sys/devices/pci0000:00/0000:00:01.0/config
+/sys/devices/pci0000:00/0000:00:00.0/config
+/sys/devices/pci0000:00/0000:00:01.3/config
+/sys/devices/pci0000:00/0000:00:03.0/config
+/sys/devices/pci0000:00/0000:00:01.1/config
+/sys/devices/pci0000:00/0000:00:02.0/config
+/usr/lib/modules/6.1.134-150.224.amzn2023.x86_64/config
+/usr/lib/python3.9/site-packages/cloudinit/config
+/usr/lib/python3.9/site-packages/awscli/botocore/data/config
+[root@ip-172-31-16-199 ~]#
+
+
+"Expected Interview Questions from Session-03
+
+1. What is the difference between cut and awk commands in linux
+
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d ""/"" -f1
+
+command explanation
+
+echo url means, it will print the url 
+|  uses the output of previous command
+cut >> to cut the printed url
+-d ""/"" >> delimiter(sperating the url)  and url is getting seperated, here the seperator is /
+-f1 >> this indicates the first fragemnt of the url
+
+
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F ""/"" '{print $1F}'
+
+command explanation
+
+echo url means, it will print the url 
+| uses the output of previous command
+-F ""/"" >> Fragment and the url is getting seperated, here the seperator is /
+""/"" '{print $1F}'  >> indicates to print the first fragment of the url
+
+
+The main difference is in cut command if we want to print the last part of the url, it is little difficult(we have to count the total no of fragments manually and use in the command). But this is resolved in awk command using '{print $NF}'
+
+=======================================================
+
+2. Print the list of users in your linux server.
+
+	cp /etc/passwd mylinuxusers   >>> copying the list of users in the current linux server to a floder named ""mylinuxusers""
+	Now use the ask command
+	awk -F "":"" '{print $1F}'
+We may not give the same answer to the interviewer , but we explain the above example how to use awk command to print the list of users."			
+
+======================================================================================================
+##Session- 4 1 May
+======================================================================================================
+
+vim editor - Visusally Improved 
+
+CAT >
+CAT >>
+
+vim <file-name>
+
+3 MODEs
+Esc, Colon, insert MODEs
+
+command MODE
+==============
+:q -> quit the file
+:wq --> write and quit
+:wq! --> force write and quit     -> if this file is opened by 2 members at a time -> Now we are force writing and quiting. 
+:q! --> exit without saving
+:/<word-search> --> search for the word from top        or direct / also we can use 
+:?<word-search> --> search for the word from bottom    - if you type n in then it will show from starting 
+
+:/ is from top and ? is from bottom. 
+
+:noh --> no highlight
+
+:set nu --> To set the numbers in rows wise. 
+
+:set nonu  --> To unset the numbers.
+
+d
+
+:27 d --> delete 27th line
+
+:%d --> total content will be deleted
+
+
+Interview Question: What do you do if you want to replace a word in a file 
+
+Answer: Using substitue i.e  s/Acutal_word/Replace_word/word to change
+
+
+:3s/sbin/SBIN --> in 3rd line by default only the first occurence of sbin will be replaced with SBIN  
+
+:3s/sbin/SBIN/g --> all occurence in that line   
+
+:%s/sbin/SBIN/g --> all occurences in the file
+
+
+Here
+s for substitute
+g for global
+
+If this is the case, use ":recover" or "vim -r devopssamplepractise"
+
+
+
+Esc Mode
+===============
+Esc + u --> undo 
+yy --> copy the line where you are      - Yank     - 10yy it will copy the 10 lines   
+p --> paste
+dd --> cut the line                        - single d Enter will cut 2 lines 
+gg --> takes to top of the file
+shift+g --> takes us to bottom of the file or CAPITAL - G
+
+
+
+
+
+
+
+Linux Administration
+=====================
+User management    
+
+Only root user/Administator  can add the users to machine  
+
+CRUD
+
+useradd <user-name> --> create user
+
+id <user-name> --> displays the user info
+
+
+[root@ip-172-31-16-199 ~]# id suresh
+uid=1001(suresh) gid=1001(suresh) groups=1001(suresh)
+
+
+gid is primary group id                   
+
+groups - is secondary group id 
+
+group --> list of similar users
+devops team have 20 members
+create devops group, add team members to the group
+
+in linux when you create user, by default group also will be created with same name..
+primary group and secondary group
+
+1 primary group, atleast one secondary group
+
+cat /etc/passwd
+cat /etc/group
+
+groupadd devops --> devops group will be created
+
+usermod -g devops suresh
+usermod -aG testers suresh     -aG- - a- Append G - Secondary Group
+
+[root@ip-172-31-16-199 ~]# gpasswd -d suresh devops
+Removing user suresh from group devops
+
+groupdel suresh 
+
+
+useradd suresh 
+
+passwd suresh 
+
+ssh suresh@ip
+
+vim /etc/ssh/sshd_config
+
+Change password auth to yes 
+
+sshd -t   - to test  
+
+
+systemctl restart sshd
+
+passwd <user-name>
+
+Sri Hari. Bandi@DESKTOP-NSG82HF MINGW64 /
+$ ssh suresh@34.224.86.3
+suresh@34.224.86.3's password:
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[suresh@ip-172-31-16-199 ~]$
+
+
+IAM Team
+
+======================================================================================================
+##Session- 5 2 May
+======================================================================================================
+
+Permissions
+==============
+R -> 4
+W -> 2
+X -> 1
+
+
+-                        rw-                r--                r--
+file/                user/   group        others
+                        owner
+directory     u       g       o
+
+ec2-user ec2-user
+user                group
+
+chmod ugo+w devops.txt
+
+chmod ugo+rwx devops.txt
+
+chmod 700 devops.txt
+
+only owner/root user can change the permissions
+
+chown <user>:<group> devops.txt
+
+chmod suresh devops.txt -> This will change the owner ship to suresh 
+
+chmod suresh(Owner)
+
+file ownership can only be modified by root user
+/etc/ssh/sshd_config
+
+how can you give key based access to linux user?
+
+ssh-keygen -f sivakumar     
+
+65,536 ports 0-65,535
+
+1. create user
+2. sivakumar can send his public key to ad min user
+3. /home/sivakumar admin creates .ssh in /home/sivakumar folder
+4. sivakumar is the only owner to this folder... 700
+5. create a file called authorized_keys with max access 600
+6. admin keeps sivakumar public key here.
+7. now sivakumar should be able to login
+port is like flat number
+
+systemctl status sshd
+
+
+25:15 minute    ssh -i <key> ec2-user@IP - In a server there are lot of services running ex http service , mail service , hhtps , ssh and my sql like this it can run n number of services
+
+And here there will a particular port for each service. As here we gave ssh so that it will go for port no 22 
+
+For each service a particular port is assigned like a flat in Appartment. 
+
+Interview Question: Which file you change to provide the root access 
+
+Answer: /etc/sudoers --> you can do changes to provide root access
+or add user to wheel group without password
+
+We can add then into wheel group or we can edit sudoers file to provide root access
+
+vim /etc/sudoers
+
+
+If you add any user to wheel group that user will get the root access  - 38:30
+
+
+package management
+====================
+package manager connects to internet windows website. downloads them and install them
+
+apt-get
+yum/dnf
+
+dnf install <package-name>
+
+dnf git remove -y
+
+/etc/yum.repos.d
+
+cat authorized_keys. 
+
+service management
+===================
+systemctl start <service-name>
+systemctl stop <service-name>
+systemctl status <service-name>
+
+sudo systemctl status sshd
+
+systemctl restart <service-name>
+
+systemctl enable <service-name>        -> If laptop is restated the service will run automatically ex- bluetooth for this to start autmatically if the system is restarted or stop and on then it will run by default 
+
+systemctl disable <service-name>
+
+install nginx and start it
+
+protocol, port, ip, username and password
+
+http                80  <IP>
+
+dnf list installed
+
+
+
+http  - > Port Number is 80
+
+https    -> Port Number is 443
+
+
+dnf list avilable 
+
+[ec2-user@ip-172-31-16-199 ~]$ sudo su
+[root@ip-172-31-16-199 ec2-user]# cd /tc
+bash: cd: /tc: No such file or directory
+[root@ip-172-31-16-199 ec2-user]# cd /etc
+[root@ip-172-31-16-199 etc]# find yum
+find: ‘yum’: No such file or directory
+[root@ip-172-31-16-199 etc]# find -name "*yum*"
+./yum.repos.d
+[root@ip-172-31-16-199 etc]# cd ./yum.repos.d/
+[root@ip-172-31-16-199 yum.repos.d]# ls
+amazonlinux.repo  kernel-livepatch.repo
+[root@ip-172-31-16-199 yum.repos.d]#
+
+
+"To create a user via Keys 
+
+
+usedadd user_name 
+make sure  home directory will be created using a user_name 
+
+cd to that user_name 
+
+
+mkdir .ssh 
+cd .ssh 
+touch authorized_keys 
+
+
+In a new terminal we can use ssh-keygen -f user_name
+
+From here paste the pub key to vim authorized_keys 
+
+now come to pwd as .ssh 
+
+then chmod 600 -R .ssh 
+
+then chown username:group .ssh 
+
+"And to create a user without key then 
+
+useradd username 
+
+passwd username
+
+vim /etc/ssh/sshd_config change password auth to yes	
+		
+
+======================================================================================================
+##Session- 6 5 May
+======================================================================================================
+IPv4process management
+=====================
+TM --> TL --> TM --> Senior --> Junior --> Frehser
+
+TM --> 5 tasks for 5 TL
+
+ls -l --> it creates a process and assign a process ID, executes the command in kernel --> get the o/p --> display on screen
+
+ps   - > Process 
+
+ps -ef   - every process  - Full-format listing
+
+
+PID - Process instance ID 
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 May02 ?        00:00:15 /usr/lib/systemd/systemd --switched-root --system --deserialize=32
+root           2       0  0 May02 ?        00:00:00 [kthreadd]
+root           3       2  0 May02 ?        00:00:00 [rcu_gp]
+root           4       2  0 May02 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 May02 ?        00:00:00 [slub_flushwq]
+root           6       2  0 May02 ?        00:00:00 [netns]
+root           8       2  0 May02 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 May02 ?        00:00:00 [mm_percpu_wq]
+
+PID and PPID
+
+ps -ef | grep <process-name>
+
+sleep 10 - It will run in foreground and it will the users to interact with CLI for some time 
+
+sleep 10 &             ->  It will run in background
+
+ (&) - ampersand. 
+
+
+How do you take the process to run in background
+
+Using & ampersand
+
+
+Sleep 100 &
+
+foreground and background process
+& to take process into background
+
+If a press is stuck or not responding we can use - kill PID - 21:00
+
+kill PID --> request to terminate
+kill -9 PID   -> order to stop -> It will stop forecfully 
+
+systemctl status nginx
+ps -ef | grep nginx
+
+we have application running --> PID
+
+10 users --> 0.1% CPU 0.1% RAM
+2000 users --> 10% CPU, 20% RAM
+10 users 
+
+top -p PID --> check the resources used by particular process
+
+Network management
+===========================
+how do you check open ports in linux
+
+netstat -lntp
+
+systemctl status <service-name>
+
+ps -ef | grep service-name
+
+netstat -lntp    -  l List ,  n - Port Number , t - Tcp , p for process 
+
+IPv4 - 192.0.2.1
+
+IPv6 - 2001:0db8::1
+
+By running this 4 commands we can check the process or application is running proper or not:
+systemctl status <service-name>
+ps -ef | grep service-name
+netstat -lntp
+top -p PID
+
+
+top -p PID
+ 
+htop -p PID
+
+
+htop software we have to install manually 
+
+dnf install htop -y 
+
+3 tier architecture:
+===========================
+desktop vs web application
+
+
+desktop: drawbacks- 
+resources usage more
+hang
+installation
+upgrade
+storage
+compatability issues
+no data security/backup
+can't access everywhere
+
+architecture is important
+
+road side breakfast shop
+==========================
+single person --> less than 10
+
+taking order, cooking the item, serving, payment collection
+
+hotel
+=====================
+cook --> prepares the item
+owner --> counter --> issuing tokens
+
+let's say 20 members
+
+100 members 
+
+restaurant
+=====================
+captain --> welcomes the customer
+waiter --> takes the order
+chef --> prepares the order
+waiter --> garnish with cabbage, onion, lemon, keera, etc.
+
+directly to chef
+==================
+1. security
+2. queue management --> reduces taste of item
+
+select * from users where username = 'siva@joindevops.com' and password = 'siva123'
+
+visual studio, putty, terraform, aws cli v2
+
+
+Java - Maven Build tool 
+.NET - New Get 
+Python - PIP 
+Node JS - NPM
+
+======================================================================================================
+##Session- 7 6 May
+======================================================================================================
+
+we have our own AMI   --> In companies also we have our OWN AMI
+devops-practice, ec2-user ,  DevOps321
+not keybased, this is password based
+
+AMI --> Amazon machine image
+
+image --> we and our surroundings
+
+AMI --> base OS --> redhat 9 + nginx + applications + packages --> take it as an image
+
+AMI  - pre configured OS with some packages
+
+public ip vs private ip
+
+192.168.1.102 --> private
+103.149.59.114 --> public
+
+
+Internal Communication should be done using private IP
+
+Outside of Network or Extranal Communication should be done using Public IP
+
+ISP - Internet Service Provider 
+
+Linux is physical server... nginx is virtual server running in linux server
+
+nginx is 
+
+nginx is the server which serves web technologies  ex: Tomcat etc , LiteSpeed Web
+
+yum install nginx -y
+
+dnf install nginx -y
+
+dnf is the advanced version of yum, there are modules in dnf
+
+apt-get install nginx -y
+
+/etc/nginx/nginx.conf --> configurations. you must restart the service when there are some config changes
+
+root /usr/share/nginx/html - Host File in Webserver / Frontend 
+
+http://44.201.38.173:80
+
+index.html --> default html
+
+godaddy --> domain registar, almost 1000 every year
+hostinger --> cheapest domains for 1st year, for every renewal it is costly
+
+joindevops --> 62819 37079
+word = meaning
+
+key --> value
+
+computers only understand 0 and 1.. usually these binaries will be converted to decimal
+
+facebook --> 143.234.53.98  --> Ip will be converted as domain name by Domain Name System i.e facebook 
+
+Root Servers are Managed by 13 Members  in word wide by non Profit Organizations https://www.iana.org/domains/root/servers - these team have full authoritry to manage DNS 
+
+Domain Name system
+
+DNS resolver is the component in ISP(ISP - Internet Service Provider) that is responsible to provide IP address.
+
+DNS resolver contacts to root servers 
+
+Example like How Autor is for Oxford Dictonay like the same or DNS Resolver Root servers are the authorized servers 
+
+TLD - Top Level Domain
+
+facebook.com --> TLD .com
+daws84s.site --> TLD is .site
+
+.in, .io, .org, .net, .edu, .gov, .co, .ai, .shop, .pizza, .space, .online
+
+.siva can be registered as TLD. godaddy, hostinger, etc are domain sellers.
+
+Forst we have to register our TLD with root servers and later our TLD will be saled by  -> godaddy, hostinger, etc are domain sellers
+
+TLD - Root servers
+Domain Sellers - godaddy , hostinger 
+
+What root servers will do is it will scan the request ex if it is .com then it will route to that .com TLD infomation   - 1:15 hr 
+
+Name Servers DNS/Name Servers 
+
+Types of Records:
+
+A --> IP address
+CNAM --> points to another domain
+MX --> mail records
+TXT --> domain verifications
+NS --> who is managing this domain now
+
+Who is Domain Registry here - Godaddy or Hostigner 
+
+Domain registar responsibility to update the details to TLD
+
+Name Server - NS --> who is managing this domain now
+
+Nameservers - Port like Airtel sim to jio 
+
+TTL -> Time To Live  -> Example like if we continously browse the facebook.com and if TTL is 1 hr then my browsing cache will be there for 1 hr and after 1 hr if try the request will come as new 
+
+https://toolbox.googleapps.com/apps/dig/
+
+
+======================================================================================================
+##Session- 8 7 May
+======================================================================================================
+
+google.com --> browser cache --> OS --> OS Cache --> ISP DNS resolver --> root servers (Root Servers wil not have the IP info and they are just maintaining the TLD information) will give TLD info--> TLD info --> .com TLD Will have name servers --> name servers (Who are managing that domain) --> A record
+
+name servers --> who are managing that domain now
+domain registar --> a mediator to sell the domain, they have default name servers and we are changing the authority to  AWS Acc 
+
+create hosted zone in AWS, get the NS records and update in domain provider
+TTL --> time to live is DNS cache before issuing next DNS request
+
+A --> IpV4
+CNAME --> points to another domain
+MX --> mail records
+TXT --> domain verification
+NS --> Nameservers
+AAAA -> Ipv6
+
+750 hours --> t2.micro or t3.micro
+31 days
+
+1 instance --> 1month
+2 instance --> 15 days
+11 instances --> 3 days
+
+mobaxterm
+
+sudo set-prompt frontend
+
+MySQL/Oracle/Postgress/MSSQL --> RDBMS --> tables and columns, primary keys and foreign keys
+
+MongoDB --> NoSQL --> documents  - Is used for storing for heavy data / big data  - Also when compare to MY SQL it is tough to maintain MongoDB 
+
+And Example for some MongoDB applications are - Flipkart , Amazon etc 
+
+MongoDB Latest v8 and we are using v7
+
+MongoDB is in json format 
+
+{
+        "name": "sivakumar",
+        "email": "info@joindevops.com"
+}
+
+
+127.0.0.1 == localhost  
+
+system/service user --> non human users which will not have login, and these are intented to run applications
+
+we will create one folder and download our code there 
+
+dnf install nginx
+dnf install mongodb-org
+
+dnf install catalogue --> can't
+
+/app --> this directory to have catalogue code
+
+I can keep /app as home directory to systemuser
+
+nginx:x:991:990:Nginx web server:/var/lib/nginx:/sbin/nologin
+
+/etc/shadow --> encrypted password here
+
+roboshop user --> home dir /app and nologin
+
+useradd --system --home /app --shell /sbin/nologin --comment "roboshop system user" roboshop
+
+Java/NodeJS/Python
+
+Node JS - v20
+
+java script --> .js
+java --> .java
+python --> .py
+go --> .go
+php -->  .php
+c language  --> .c
+
+every programming have dependencies or libraries     - Example house construction - 52.18 Min 
+
+build tool -> compile(syntax check), download the dependencies, ready to run
+build file
+
+Every programming language will have build tool and build file i.e for node js below is   - 54: 30 Sec
+
+Build tool - nodejs --> npm (node package manager) 
+build file --> package.json    - > it contains required libraries and scripts
+
+npm install --> it search for package.json in the current directory   - 55: 54 Sec
+
+After running npn install it will download all the dependencies from package.json and a new directory will be created with node_modules in the same path
+
+you install programming language
+create one directory
+create one user
+downlod the code
+install dependencies
+
+we need to create systemctl file --> starting, stopping, restarting, enable/disable are easy for this application 
+
+/etc/systemd/system --> create .service file, catalogue.service file
+
+systemctl daemon-reload    -    We are telling systemd to reload so it will detect new service.
+
+nslookup IP
+
+
+======================================================================================================
+##Session- 9 8 May
+======================================================================================================
+
+MySQL
+=======
+table and column database --> RDBMS
+
+Linux Server --> MySQL server
+
+House --> Linux Server
+Room --> DB server
+Rac --> Schema --> tables
+1DB server may have 1 or many
+transactions, users, 
+
+After running npn install it will download all the dependencies from package.json and a new directory will be created with node_modules in the same path
+
+Mostly for:
+
+Backend applications: port no - 8080 will be opened
+Frontend applications: port no - 80 will be opened
+
+Mysql port: 3306
+
+telnet mysql.daws84s.site 3306 --> checks whether mysql is allowing connections to it on port 3306
+
+/etc/nginx/nginx.conf
+
+prime --> server, vpn is client for prime
+client --> mobile
+
+we are hiding client identity --> forward proxy
+actual client --> forward proxy --> server
+
+1. content filtering
+2. traffic monitoring
+3. anonymous client
+4. geo restrictions bypass
+5. caching
+
+Reverse proxy
+----------------
+Nginx can be used as load balancer, reverse proxy server, web server
+
+1. client is not aware of server identity
+2. security
+3. load balancing
+4. SSL termination
+
+Frontend --> Backend
+
+telnet backend.daws84s.site 8080
+login to backend and check systemctl status backend
+check logs /var/log  > less messages 
+
+Shift + G to check the bottom lines
+
+http://daws84s.site/api/transaction
+
+HTTP Status codes
+-------------------
+1XX --> information
+2XX --> success
+3XX --> redirection
+
+errors
+---------
+4XX --> client side error
+5XX --> server side error
+
+CRUD
+=======
+INSERT
+SELECT
+UPDATE
+DELETE
+
+
+reports --> daily, weekly, monthly, quarterly
+bank-records
+user
+notifications
+ai/ml
+
+saas
+
+configuring server
+-------------------------
+Linux server creation
+programming language installation includes build tool
+create one dedicated directory for our application /app
+create one system user for our application roboshop
+download the code into our directory
+install dependencies
+create systemctl service
+if required load data
+start the service
+
+telnet mysql.daws84s.site 3306 --> connected
+user password problem
+query problem
+
+======================================================================================================
+##Session- 10 9 May
+======================================================================================================
+
+frontend
+daws84s.site/api/catalogue --> 
+
+http://daws84s.site/api/catalogue/categories
+
+http://daws84s.site/api/catalogue/products/Artificial%20Intelligence
+
+[
+    {
+        "_id": "681d63fc59c47e0558c59f36",
+        "sku": "Ewooid",
+        "name": "Ewooid",
+        "description": "Fully sentient assistant",
+        "price": 200,
+        "instock": 0,
+        "categories": [
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "_id": "681d63fc59c47e0558c59f3e",
+        "sku": "STAN-1",
+        "name": "Stan",
+        "description": "Observability guru",
+        "price": 67,
+        "instock": 1000,
+        "categories": [
+            "Robot",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "_id": "681d63fc59c47e0558c59f35",
+        "sku": "Watson",
+        "name": "Watson",
+        "description": "Probably the smartest AI on the planet",
+        "price": 2001,
+        "instock": 2,
+        "categories": [
+            "Artificial Intelligence"
+        ]
+    }
+]
+
+/var/log/nginx/access.log
+
+/var/log/messages
+
+HD(ROM) --> RAM --> Apps
+
+App --> DB
+
+Redis (REmote DIctionary Server) -> It is known for ultra-fast performance due to its in-memory(stores in RAM) architecture
+
+Send a connection req to DB  
+Connection establish
+Run a query against DB
+DB should fetch the data from HD
+Send response to app
+Close the connection
+
+App --> Cache
+App --> Cache --> DB --> Cache
+
+======================================================================================================
+##Session- 11 12 May
+======================================================================================================
+
+mongodb
+catalogue
+frontend
+
+redis
+user
+cart
+
+mysql
+shipping
+
+rabbitmq
+payment
+dispatch
+
+2XX --> Success
+4XX --> client side errors
+5XX --> server side errors
+1XX --> informational
+3XX --> redirectional
+
+HTTP Methods --> GET, POST, PUT, DELETE, OPTIONS
+
+Nouns and Verbs
+
+CRUD --> Create Read Update Delete
+
+User --> Noun, Create User --> Verbs
+
+http://daws84s.site/user and method GET --> getUser  --> readuser
+http://daws84s.site/user and method POST --> CreateUser
+http://daws84s.site/user and method PUT --> updateUser
+http://daws84s.site/user and method DELETE --> deleteUser
+
+http://daws84s.site/order and method POST
+
+http://daws84s.site/orders and method GET
+
+http://daws84s.site/orders/O654S5HG and method GET
+
+http://daws84s.site/api/catalogue/categories --> http://catalogue.daws84s.site/categories
+http://daws84s.site/api/catalogue/products/Artificial%20Intelligence
+
+http://localhost:8080/products/Artificial%20Intelligence
+
+http://daws84s.site/api/catalogue/product/Ewooid
+
+http://localhost:8080/product/Ewooid
+
+backend apps always do CRUD operations on DB
+
+nginx logs - /var/log/nginx/access.log
+backend component logs - /var/log/messages
+
+Java --> Maven --> pom.xml
+groupId, artifactId, version
+
+group id - com.hdfc
+artifact id - banking.savings.smsbanking
+version: 1.0.0
+
+Java --> source code is with .java extension
+java code compile --> bytecode --> run bytecode/compiled code
+
+There is no need of compling node JS and python in specifc and we run them direclty as compile will be done in during run time
+
+Java code first we have to compile and we will get bite code 
+
+java code compile --> bytecode --> run bytecode/compiled code
+
+nodejs --> npm
+
+maven --> java
+
+.java --> java source file extension and after compiling we will get .class as it we get .class
+.class --> java bytecode extension
+
+Out of Java , nodejs and Python which is speed ? > Java as compilation is already done as system likes to execute. > But in nodejs and Python while run time compilation will take 
+ 
+when we install nodejs we got build tool npm
+
+here for java if you install maven java will install by default and vice versa
+
+mvn clean package --> clean previous installs and do the fresh packaging
+.jar --> packaging in java(bytecode)     -> There is no need of packaging in node js and python bcz there is no compilation and it will run directy but in Java we should must create jar file
+
+node_modules -> Dependiences are downloaded here 
+target - Java application is binded here 
+
+mvn compile --> compile the java source code and create bytecode in .class format in target folder
+mvn package --> pack the java class files into single file called shipping-<version>.jar
+
+maven life cycle --> clean compile test and package
+package == compile+test+package
+
+room --> DB server
+racks --> schema
+tables
+
+python
+file extension --> .py
+build tool --> pip
+build file --> requirements.txt
+
+install PL
+create one directory
+
+======================================================================================================
+##Session- 12 13 May
+======================================================================================================
+
+MQ Database
+================
+Synchronous and Asynchornous
+
+sync vs async(fire and forget)
+
+async  is like (fire and forget) i.e we sent a msg and we don't need to bouther of it as it will be delivered when other side system is up on automatic 
+
+Synchronous: Request responde module - i.e Request expects immediate response 
+http://daws84s.site
+request sent --> waits for 1 min --> if no response then error
+http expects immidiate response --> sync
+
+ASynchronous communication -  MQ - Message Queue - When other side system is down it will wait until system is up and no data lost 
+===================
+1. point to point -> message will be delivered to single system
+2. topic and subscribe --> message will be delivered to all subscribers
+
+when I upload video, all my subscribers get notifications
+
+Example for Asyc communication is: order is accepted ans sent request to Third party delivery. 
+
+
+MQ - Message Queue: 
+
+ActiveMQ
+RabbitMQ
+IBMMQ
+Kafka
+
+robotshop and we have a vendor to delivere our orders
+
+we get 1000's of messages from our deliverey partner
+
+
+Maven Build Workflow:
+Below is a typical Maven build workflow for the default lifecycle.
+
+Validate Phase: Check the project configuration and validate if all information required is present.
+Compile Phase: Compile the source code of the project.
+Test Phase: Execute unit tests using a testing framework.
+Package Phase: Bundle the compiled code into a JAR/WAR file.
+Verify Phase: Perform checks on the packaged code.
+Install Phase: Install the package to the local repository for use as a dependency in other projects locally.
+Deploy Phase: Deploy the package to a remote repository for sharing with other developers.
+
+======================================================================================================
+##Session- 13 14 Apr
+======================================================================================================	
+
+payment --> python
+
+extension --> .py
+pip
+requirements.txt
+
+softlink/symlink hardlink and inode
+
+shortcut ex chome in desktop and notepad (is also a file pointing real file) --> points to other real/original file
+if I delete real file, shortcut will break
+
+inode --> this is the metadata of the file
+
+file permissions
+ownership
+size
+original memory address location of the file
+
+ls -i  -> inode -> list files with i node
+
+stat <file_name>
+
+Interview Question: How will you get the inode number
+
+Answers: Using command:  stat  <file_name>
+
+lrwxrwxrwx 1 user user 15 May 13 10:00 shortcut.txt -> /home/user/file.txt
+
+lrwxrwxrwx    - starting l is link file 
+
+Sym link will be created with: ln -s <original-file> <symlink-file>     - AT 33:19 -> example in front end ln -s nginx.conf /root/nginx.conf
+
+Hard link: ln  <original-file> <symlink-file>      --> AT 
+
+symlink is like shortcut to original file. hardlink is like a copy of file. it is like backup
+
+symlink and original file will have a diff inode. symlinks are used to point diff versions
+
+find / -name "*.conf"
+
+find / -inum <i_node_num>
+
+
+/etc/nginx/nginx.conf --> /etc/nginx-1.conf
+/etc/nginx/nginx.conf --> /etc/nginx-2.conf
+
+dnf-4 install nginx -y
+
+/usr/bin/dnf --> dnf-4
+
+
+Symlink will have diff inodes
+
+Hardlinks will have same inode
+
+ls -li   -> lrwxrwxrwx 1 user user 15 May 13 10:00 shortcut.txt -> /home/user/file.txt
+
+lrwxrwxrwx 1    -> Number of link files
+
+47:30 Sec 
+
+which dnf 
+
+if original file is deleted symlink will break. if original file deleted hard link will work
+
+symlink is used to point diff versions, hardlink is used as backup to original file
+
+symlink can be created to folders, we can't create hard link to folders
+
+symlink will work with diff types of disks, hardlink can't be created for diff disks
+
+memory troubleshooting
+-------------------------
+memory - RAM
+storage - HD
+
+free 
+
+free -m -> In mega bites 
+
+free -h -> Human readable format 
+
+Swap memory is from HD as virtual RAM
+HD --> RAM --> Programs
+
+using top command we can see the running memory usuage 
+
+ps -ef it will list all the process running 
+
+auxlory 
+ps aux -> along with process it will display cpu and ram usuage 
+
+To see the top 5 memory consuming process: 
+ps aux --sort=%mem | head -n 5
+
+ps aux --sort=%mem | tail
+
+ps aux --sort=-%mem | tail
+
+ps aux --sort=-%cpu| tail
+
+
+disk usage -> df -hT
+
+du -sh <folder-path>                                                                      - s- summarize h - Human readable 
+du -sh * --> all files and folders size will be displayed
+
+some time in var/log  -> from log days some many logs are logged and is uses more memory and some time it will go for GB's and what we do is we wil try trouble shoot and do archive the logs 
+
+/app --> /opt/app     - opt Optional      ->  Usually third party apps is processed in /opt/app directory
+
+du -ah / | sort -rh | head -n 20
+
+du -ah /        Show sizes of all files and folders from the root /, in human-readable form
+sort -rh        Sort the output in reverse (-r) order by human-readable size (-h)
+head -n 20        Show the top 20 largest entries from the sorted list
+
+Linux Directory structure - https://github.com/daws-84s/concepts/blob/main/linux-directory-structure.MD
+
+/usr/share/nginx/html --> nginx root directory
+/usr/bin
+/usr/sbin
+/usr/local/bin/
+
+/proc --> processes started by kernel
+
+
+cd / - is root directory 
+
+cd /root -> root user home folder 
+
+$ is where ever we want to refer a variable we should use dollar before it 

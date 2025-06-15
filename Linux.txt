@@ -1,0 +1,242 @@
+
+=====================================================================================================
+Session- 1 28 Apr
+=====================================================================================================
+
+https://github.com/daws-84s
+	
+Environments: DEV, QA, SIT, UAT, PERF, PRE-PROD, PROD
+
+SIT- System Integration Testing
+PERF - Performance 
+
+Linux --> Linus torvalds
+
+
+windows
+-----------
+not open source
+costly
+not secure must install anti virus
+slow
+too many graphics
+frequent restarts
+tough to update/upgrade
+
+Linux --> 9MB
+Secure
+high speed --> mostly text
+no need of restarts
+install or update packages is easy
+free, community support
+low resources"
+	
+
+DevOps is the process of building, deploying and testing the code written by developer on the same day instead of doing after complete development.. we can acheive this using continous integration, continous deployment, continous delivery and continous testing. 
+We can do faster releases with less defect using DevOps... basically automation mindset to get the best results
+
+DEV, QA, SIT, UAT, PERF, PRE-PROD, PROD
+
+min 2, max any number
+
+Linux --> Linus torvalds
+=================
+UNIX --> Hardware and Software(Unix OS) together
+CPU, RAM, Hard Disk, OS(Software)
+Laptop --> IBM BIOS
+
+Linux --> from the sratch using C language based on unix principles. He invented git to store this
+
+windows
+-----------
+not open source
+costly
+not secure must install anti virus
+slow
+too many graphics
+frequent restarts
+tough to update/upgrade
+
+Linux --> 9MB
+Secure
+high speed --> mostly text
+no need of restarts
+install or update packages is easy
+free, community support
+low resources
+	
+======================================================================================================
+Session- 2 29 Apr
+======================================================================================================
+
+what is computer?
+==================
+IP enabled device
+
+laptop == mobile == server == chip == tv ==> computer
+server ==> only to host applications
+
+RAM, OS, HD, Processor --> IP enabled device
+
+Client Server architecture
+
+Networking between computers
+
+1. Network
+2. Facebook application
+
+serve --> lawyer serves to us, we are his client
+
+facebook is in Linux server, if problem comes we need to login to server..
+
+https://www.joindevops.com
+
+Protocol: https
+Port: 443
+IP: DNS IP
+Username and password --> authentication
+
+SSH --> Secure shell
+Port: 22
+IP, Username and password/private-key
+
+Firewall --> checks inbound and outbound traffic
+
+inbound --> incoming traffic --> port number 22, 103.149.59.114
+outbound --> outgoing traffic
+
+authentication
+==================
+1. what you know --> username password
+2. what you have --> keys, tokens, authentication, rsa token
+3. what you are --> fingerprint, retina, palm, face
+
+Server == box == node   - > In companies server is generally noted as box by everyone
+
+lock = public
+key = private
+
+key pairs --> public key and private key
+
+
+1. create key pair
+2. create firewall
+3. import public key to aws account
+4. create server and attach public key
+5. attach firewall to server
+
+Git Bash --> Mini Linux in windows
+SSH client 
+
+browser --> http/https client
+Linux Server --> SSH Server
+
+git bash == putty == super putty == mobaxterm == mac terminal = windows cmd
+
+ssh clients
+
+pwd --> present working directory
+
+User Directory
+C:\Users\siva --> windows format
+/c/Users/siva --> linux format
+
+Windows accept space in file name -> Linux won't accept 
+
+windows --> not case sensitive Siva == siva == Siva
+Linux --> case sensitive --> Siva != siva no space in linux
+
+/c/devops/daws-84s == C:\devops\daws-84s
+
+ssh-keygen -f <file-name>
+
+ssh-keygen -f daws-84s
+
+ssh-rsa long-random-code Sri Hari. Bandi@DESKTOP-NSG82HF
+
+Region --> us-east-1 - N.Virginia -> AWS is first created in US at N>virgina and hence using any service in this locations is cheaper in terms of cost 
+
+0.0.0.0/0
+
+98.81.70.98, 22, SSH, ec2-user, private-key
+
+ssh -i <private-key> ec2-user@98.81.70.98
+
+OS --> Redhat, Ubuntu, centos, fedore, suse, oracle linux, amazon linux, debian, rocky linux, kali, solaris
+
+Linux is os or not --> Linux is kernel
+
+OS --> to interact with hardware
+
+Kernal --> heart and brain of OS
+
+Kernel + UI == OS
+
+Redhat --> kernel + user interface ==> Redhat OS
+Debian --> Linux kernel + UI ==> Debian
+
+99.9% same all Linux distros/flavours
+
+Redhat --> Open source --> code is free
+Redhat enterprise RHEL --> support
+
+Current RHEL is OS version is 9 
+
+RHEL = AWS Linux = Centos = Fedora = Rocky Linux = AlmaLinux
+
+Linux is a kernal, RHEL is the distribution or Linux flavour 
+
+Search for Linux Distributions in Linux in Google -> It will show all dirstibutions 
+
+
+command <options> <inputs>
+
+
+uname  -> Will show which kernal we are using -> FYI Amazon Linux bacially uses Linux Kernal
+
+uname  -a . 
+
+uname --help
+
+will display all options avilable in uname command 
+
+/home/ec2-user --> linux home directory
+/c/users/siva --> windows home directory 
+
+cd --> change directory
+
+cd .. --> one step back
+
+ls --> list subdirectories
+
+
+drwx------. 3 ec2-user ec2-user  95 May  1 05:52 .
+drwxr-xr-x. 3 root     root      22 May  1 05:46 ..
+-rw-------. 1 ec2-user ec2-user  28 May  1 05:53 .bash_history
+
+
+d is directory 
+- Files 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

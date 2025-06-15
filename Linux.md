@@ -12,11 +12,17 @@ Linux --> Linus torvalds
 
 **windows:**
 not open source
+
 costly
+
 not secure must install anti virus
+
 slow
+
 too many graphics
+
 frequent restarts
+
 tough to update/upgrade
 
 Linux --> 9MB

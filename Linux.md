@@ -1,6 +1,6 @@
-=============================================
+----------
 # Session- 1 28 Apr
-=============================================
+----------
 
 
 https://github.com/daws-84s
@@ -50,7 +50,7 @@ Laptop --> IBM BIOS
 Linux --> from the sratch using C language based on unix principles. He invented git to store this
 
 ### **windows:**
------------
+================
 
 not open source, 
 costly,
@@ -61,7 +61,7 @@ frequent restarts,
 tough to update/upgrade,
 
 ### **Linux:** --> 9MB
-----------
+================
 
 Secure, 
 high speed --> mostly text,
@@ -70,9 +70,9 @@ install or update packages is easy,
 free, community support,
 low resources,
 	
-=============================================
+----------
 # Session- 2 29 Apr
-=============================================
+----------
 
 what is computer?
 ==================

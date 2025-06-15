@@ -1,4 +1,7 @@
+=============================================
 # Session- 1 28 Apr
+=============================================
+
 
 https://github.com/daws-84s
 	
@@ -39,32 +42,37 @@ min 2, max any number
 
 ### Linux --> Linus torvalds
 =================
-UNIX --> Hardware and Software(Unix OS) together
-CPU, RAM, Hard Disk, OS(Software)
+
+UNIX --> Hardware and Software(Unix OS) together, 
+CPU, RAM, Hard Disk, OS(Software), 
 Laptop --> IBM BIOS
 
 Linux --> from the sratch using C language based on unix principles. He invented git to store this
 
-windows
+### **windows:**
 -----------
+
 not open source, 
-costly
-not secure must install anti virus
-slow
-too many graphics
-frequent restarts
-tough to update/upgrade
+costly,
+not secure must install anti virus,
+slow,
+too many graphics,
+frequent restarts,
+tough to update/upgrade,
 
-Linux --> 9MB
-Secure
-high speed --> mostly text
-no need of restarts
-install or update packages is easy
-free, community support
-low resources
+### **Linux:** --> 9MB
+----------
+
+Secure, 
+high speed --> mostly text,
+no need of restarts,
+install or update packages is easy,
+free, community support,
+low resources,
 	
-
+=============================================
 # Session- 2 29 Apr
+=============================================
 
 what is computer?
 ==================

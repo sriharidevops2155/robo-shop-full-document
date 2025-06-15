@@ -1,6 +1,5 @@
-# Session- 1 28 Apr
 =====================================================================================================
-# Session- 1 28 Apr
+## Session- 1 28 Apr
 =====================================================================================================
 
 https://github.com/daws-84s
@@ -32,8 +31,8 @@ free, community support
 low resources"
 	
 
-** DevOps is the process of building, deploying and testing the code written by developer on the same day instead of doing after complete development.. we can acheive this using continous integration, continous deployment, continous delivery and continous testing. 
-We can do faster releases with less defect using DevOps... basically automation mindset to get the best results **
+**DevOps is the process of building, deploying and testing the code written by developer on the same day instead of doing after complete development.. we can acheive this using continous integration, continous deployment, continous delivery and continous testing. 
+We can do faster releases with less defect using DevOps... basically automation mindset to get the best results**
 
 DEV, QA, SIT, UAT, PERF, PRE-PROD, PROD
 

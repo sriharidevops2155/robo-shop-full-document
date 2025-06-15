@@ -53,7 +53,9 @@ Linux --> from the sratch using C language based on unix principles. He invented
 ================
 
 not open source, 
+
 costly,
+
 not secure must install anti virus,
 slow,
 too many graphics,
